@@ -43,7 +43,6 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
     font-weight: 300;
     color: var(--theme-text);
-    cursor: crosshair;
   }
 
   h1,
@@ -94,6 +93,10 @@ const GlobalStyle = createGlobalStyle`
 
   .active {
     opacity: 1;
+  }
+
+  #map {
+    height: 100%;
   }
 `
 

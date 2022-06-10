@@ -44,14 +44,16 @@ export const H2 = styled.h2`
   }
 `
 
-export const Paragraph = styled.p``
+export const Paragraph = styled.p`
+  font-size: 1rem;
+
+  @media (min-width: 71.88em) {
+    font-size: 1.13rem;
+  }
+`
 
 export const HR = styled.hr`
   width: 100%;
-
-  /* @media (min-width: 71.88em) {
-    display: none;
-  } */
 `
 
 export const Div2 = styled.div``
@@ -59,6 +61,10 @@ export const Div2 = styled.div``
 export const H3 = styled.h3`
   margin-bottom: 1rem;
   font-weight: 400;
+
+  @media (min-width: 71.88em) {
+    font-size: 1.25rem;
+  }
 `
 
 export const Ul = styled.ul`
@@ -68,6 +74,10 @@ export const Ul = styled.ul`
 
   & > *:not(:last-child) {
     margin-bottom: 0.5rem;
+  }
+
+  @media (min-width: 71.88em) {
+    font-size: 1.13rem;
   }
 `
 

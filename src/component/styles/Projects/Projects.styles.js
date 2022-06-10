@@ -31,17 +31,8 @@ const bgTransition = keyframes`
   0% {
     background-size: 120%;
   }
-  25% {
-    background-size: 130%;
-  }
-  50% {
-    background-size: 140%;
-  }
-  75% {
-    background-size: 150%;
-  }
   100% {
-    background-size: 160%;
+    background-size: 130%;
   }
 `
 
@@ -65,10 +56,19 @@ export const Div1 = styled.div`
     animation-name: ${bgTransition};
     animation-duration: 500ms;
     animation-timing-function: ease-in-out;
+    animation-delay: 100ms;
     animation-fill-mode: forwards;
+
+    &::before {
+      opacity: 0.8;
+    }
+
+    &::after {
+      opacity: 1;
+    }
   }
 
-  &::after {
+  &::before {
     content: "";
     display: block;
     position: absolute;
@@ -76,7 +76,22 @@ export const Div1 = styled.div`
     height: 100%;
     border-radius: inherit;
     background-color: var(--black);
-    opacity: 0.5;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+  }
+
+  &::after {
+    content: "CLICKME";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    font-size: 1.75rem;
+    letter-spacing: 2rem;
+    color: var(--white);
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
   }
 `
 

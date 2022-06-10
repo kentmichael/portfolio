@@ -1,5 +1,5 @@
 import React from "react"
-import { Nav, Div, Anchor, Button, Span } from "./styles/Navigation/Nav"
+import { Nav, Div, Button, Button1, Span } from "./styles/Navigation/Nav"
 
 const Header = (props) => {
   const { darkMode, setDarkMode } = props.mode
@@ -7,13 +7,13 @@ const Header = (props) => {
   return (
     <Nav>
       <Div>
-        <Anchor href="/">KS.</Anchor>
-        <Button onClick={() => setDarkMode(!darkMode)}>
+        <Button>KS.</Button>
+        <Button1 onClick={() => setDarkMode(!darkMode)}>
           <Span
             className={darkMode ? "fa-solid fa-sun" : "fa-solid fa-moon"}
           ></Span>
           {darkMode ? "Light Mode" : "Dark Mode"}
-        </Button>
+        </Button1>
       </Div>
     </Nav>
   )

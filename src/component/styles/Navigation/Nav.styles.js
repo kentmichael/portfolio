@@ -34,26 +34,25 @@ export const Div = styled.div`
   }
 `
 
-export const Anchor = styled.a`
+export const Button = styled.button`
+  border: none;
+  padding: 0;
+  font-family: var(--font-primary);
   font-size: 2.75rem;
   font-weight: 600;
   text-transform: uppercase;
+  background-color: var(--theme-element);
   color: var(--theme-text);
+  cursor: pointer;
 
   @media (min-width: 71.88em) {
     font-size: 2.25rem;
   }
 `
 
-export const Button = styled.button`
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: var(--theme-element);
-  font-family: var(--font-primary);
+export const Button1 = styled(Button)`
+  font-weight: 400;
   font-size: 1.12rem;
-  color: var(--theme-text);
-  cursor: pointer;
 
   @media (min-width: 71.88em) {
     font-size: 1rem;
