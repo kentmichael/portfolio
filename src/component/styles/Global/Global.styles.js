@@ -4,6 +4,13 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --black: hsl(0, 0%, 0%);
     --white: hsl(0, 0%, 100%);
+    --blue: hsl(246, 80%, 60%);
+    --light-orange: hsl(15, 100%, 70%);
+    --soft-blue: hsl(195, 74%, 62%);
+    --light-red: hsl(348, 100%, 68%);
+    --lime-green: hsl(145, 58%, 55%);
+    --violet: hsl(264, 64%, 52%);
+    --soft-yellow: hsl(43, 84%, 65%);
 
     --theme-bg: ${(props) =>
       props.darkMode
@@ -36,6 +43,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
     font-weight: 300;
     color: var(--theme-text);
+    cursor: crosshair;
   }
 
   h1,
@@ -68,6 +76,24 @@ const GlobalStyle = createGlobalStyle`
       background-color: var(--theme-text);
       color: var(--theme-bg);
     }
+  }
+
+  span {
+    &::selection {
+      background-color: var(--theme-text);
+      color: var(--theme-bg);
+    }
+  }
+
+  ul li {
+    &::selection {
+      background-color: var(--theme-text);
+      color: var(--theme-bg);
+    }
+  }
+
+  .active {
+    opacity: 1;
   }
 `
 

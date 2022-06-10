@@ -2,10 +2,14 @@ import styled from "styled-components"
 
 export const Nav = styled.nav`
   margin-top: 0;
-  margin-bottom: 3.13rem;
+  margin-bottom: 5rem;
   padding: 0;
   background-color: var(--theme-element);
   box-shadow: 0 0.1rem 0.5rem hsla(0, 0%, 20%, 0.2);
+
+  @media (min-width: 71.88em) {
+    margin-bottom: 6rem;
+  }
 `
 
 export const Div = styled.div`

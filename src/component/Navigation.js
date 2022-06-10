@@ -7,7 +7,7 @@ const Header = (props) => {
   return (
     <Nav>
       <Div>
-        <Anchor href="/">KMES.</Anchor>
+        <Anchor href="/">KS.</Anchor>
         <Button onClick={() => setDarkMode(!darkMode)}>
           <Span
             className={darkMode ? "fa-solid fa-sun" : "fa-solid fa-moon"}
