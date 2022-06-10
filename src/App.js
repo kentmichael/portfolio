@@ -6,17 +6,21 @@ import Nav from "./component/Navigation"
 import Home from "./component/Home"
 import NoMatch from "./component/NoMatch"
 import Projects from "./component/Projects"
+import AboutMe from "./component/AboutMe"
 
 const theme = {
   dark: {
-    element: "hsl(235, 46%, 20%)",
-    background: "hsl(226, 43%, 10%)",
+    // element: "hsl(235, 46%, 20%)",
+    // background: "hsl(226, 43%, 10%)",
+    element: "hsl(0, 0%, 10%)",
+    background: "hsl(0, 0%, 0%)",
     text: "hsl(0, 0%, 100%)",
   },
   light: {
     element: "hsl(0, 0%, 100%)",
     background: "hsl(0, 0%, 80%)",
-    text: "hsl(226, 43%, 10%)",
+    // text: "hsl(226, 43%, 10%)",
+    text: "hsl(0, 0%, 0%)",
   },
 }
 
@@ -31,7 +35,7 @@ function App() {
         <Routes>
           <Route path="portfolio" element={<Home />}>
             <Route index element={<Projects />} />
-            <Route path="about-me" element={<NoMatch />} />
+            <Route path="about-me" element={<AboutMe />} />
             <Route path="projects" element={<Projects />} />
             <Route path="contact" element={<NoMatch />} />
           </Route>

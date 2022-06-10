@@ -85,7 +85,7 @@ export const Div2 = styled.div`
   display: flex;
   flex-flow: column wrap;
   padding-block: 2rem;
-  padding-inline: 1.5rem;
+  padding-inline: 1.75rem;
   background-color: var(--theme-element);
 
   @media (min-width: 71.88em) {

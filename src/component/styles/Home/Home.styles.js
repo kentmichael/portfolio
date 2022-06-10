@@ -15,6 +15,7 @@ export const Main = styled.main`
   @media (min-width: 71.88em) {
     grid-template-columns: 1fr 3fr;
     gap: 2rem;
+    margin-bottom: 6rem;
     align-items: start;
   }
 

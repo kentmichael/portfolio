@@ -162,7 +162,7 @@ const Projects = () => {
         return (
           <Section bgColor={bgColor} key={idx}>
             <a href={liveSiteUrl} target="_blank" rel="noreferrer">
-              <Div1 bg={screenshot} title="Go to Live Site"></Div1>
+              <Div1 bg={screenshot} title="Visit Website"></Div1>
             </a>
             <Div2>
               <Div3>
@@ -170,7 +170,7 @@ const Projects = () => {
                 <Div4>
                   <Anchor
                     href={liveSiteUrl}
-                    title="Visit Website"
+                    title="Live Site URL"
                     target="_blank"
                     className="fa-solid fa-link"
                   ></Anchor>
