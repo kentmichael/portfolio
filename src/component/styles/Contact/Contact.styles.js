@@ -29,7 +29,7 @@ export const H2 = styled.h2`
   letter-spacing: 0.3rem;
 
   @media (min-width: 71.88em) {
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 1rem;
   }
 `

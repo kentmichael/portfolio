@@ -2,6 +2,9 @@ import React from "react"
 import restCountriesBg from "../asset/project-images/rest-countries-bg.png"
 import rockPaperBg from "../asset/project-images/rock-paper-etc-bg.png"
 import spaceTourismBg from "../asset/project-images/space-tourism-bg.png"
+import shortlyUrlBg from "../asset/project-images/shortly-url-bg.png"
+import adviceAppBg from "../asset/project-images/advice-app-bg.png"
+import productPageBg from "../asset/project-images/product-page-bg.png"
 import {
   Div,
   Section,
@@ -102,43 +105,82 @@ const projectData = [
     bgColor: "--soft-blue",
   },
   {
-    title: "Project4",
-    description: "Lorem",
-    liveSiteUrl: "Url1",
-    sourceCode: "",
-    screenshot: "",
+    title: "Shortly URL",
+    description:
+      "Landing page that let's you shorten any valid url, see a list of your shortened links, even after refreshing the browser and copy the shortened link to their clipboard in a single click!",
+    liveSiteUrl: "https://kentmichael.github.io/url-shortening-api/",
+    sourceCode: "https://github.com/kentmichael/url-shortening-api",
+    screenshot: shortlyUrlBg,
     techStack: [
       {
         name: "html5",
         color: "#FF760D",
+      },
+      {
+        name: "css3-alt",
+        color: "#008AD8",
+      },
+      {
+        name: "js-square",
+        color: "#FEDD00",
+      },
+      {
+        name: "sass",
+        color: "#D62598",
       },
     ],
     bgColor: "--light-red",
   },
   {
-    title: "Project5",
-    description: "Lorem",
-    liveSiteUrl: "Url1",
-    sourceCode: "",
-    screenshot: "",
+    title: "Advice Generator App",
+    description:
+      "Built using the Advice Slip API. Need some random advice? Roll the dice!",
+    liveSiteUrl: "https://kentmichael.github.io/advice-generator-app/",
+    sourceCode: "https://github.com/kentmichael/advice-generator-app",
+    screenshot: adviceAppBg,
     techStack: [
       {
         name: "html5",
         color: "#FF760D",
       },
+      {
+        name: "css3-alt",
+        color: "#008AD8",
+      },
+      {
+        name: "js-square",
+        color: "#FEDD00",
+      },
+      {
+        name: "sass",
+        color: "#D62598",
+      },
     ],
     bgColor: "--violet",
   },
   {
-    title: "Project6",
-    description: "Lorem",
-    liveSiteUrl: "Url1",
-    sourceCode: "",
-    screenshot: "",
+    title: "E-commerce Product Page",
+    description:
+      "A product page that displays a single product, open a lightbox gallery by clicking on the large product image, switch the large product image by clicking on the small thumbnail images, add items to cart, view the cart and remove items from it.",
+    liveSiteUrl: "https://kentmichael.github.io/e-commerce-product-page/",
+    sourceCode: "https://github.com/kentmichael/e-commerce-product-page",
+    screenshot: productPageBg,
     techStack: [
       {
         name: "html5",
         color: "#FF760D",
+      },
+      {
+        name: "css3-alt",
+        color: "#008AD8",
+      },
+      {
+        name: "js-square",
+        color: "#FEDD00",
+      },
+      {
+        name: "sass",
+        color: "#D62598",
       },
     ],
     bgColor: "--soft-yellow",

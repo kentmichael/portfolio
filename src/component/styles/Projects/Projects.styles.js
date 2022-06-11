@@ -54,10 +54,14 @@ export const Div1 = styled.div`
 
   &:hover {
     animation-name: ${bgTransition};
-    animation-duration: 500ms;
+    animation-duration: 1000ms;
     animation-timing-function: ease-in-out;
     animation-delay: 100ms;
     animation-fill-mode: forwards;
+
+    @media (min-width: 40em) {
+      animation-duration: 500ms;
+    }
 
     &::before {
       opacity: 0.8;

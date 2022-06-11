@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { ThemeProvider } from "styled-components"
 import { Routes, Route } from "react-router-dom"
 import GlobalStyle from "./component/styles/Global/Global"
@@ -22,8 +22,15 @@ const theme = {
   },
 }
 
+const mode = JSON.parse(localStorage.getItem("KSPortfolioV1"))
+const initialState = mode ? mode?.darkMode : false
+
 function App() {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(initialState)
+
+  useEffect(() => {
+    localStorage.setItem("KSPortfolioV1", JSON.stringify({ darkMode }))
+  }, [darkMode])
 
   return (
     <React.Fragment>
