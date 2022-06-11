@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/portfolio/static/js/main.abbb233c.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/photo-of-me.jpg": "/portfolio/static/media/photo-of-me.977a7fd481260f82afbe.jpg",
+    "static/media/space-tourism-bg.png": "/portfolio/static/media/space-tourism-bg.9fb8c42e4aeca06b9851.png",
+    "static/media/product-page-bg.png": "/portfolio/static/media/product-page-bg.34e740c22cdafeb436b1.png",
+    "static/media/shortly-url-bg.png": "/portfolio/static/media/shortly-url-bg.a1054cd1e4972111be8e.png",
+    "static/media/rock-paper-etc-bg.png": "/portfolio/static/media/rock-paper-etc-bg.2d294f897646b95fe363.png",
+    "static/media/rest-countries-bg.png": "/portfolio/static/media/rest-countries-bg.3af4fdc123cc866f6568.png",
+    "static/media/react-router.png": "/portfolio/static/media/react-router.59eb6c21b52ee717d103.png",
+    "static/media/advice-app-bg.png": "/portfolio/static/media/advice-app-bg.479d1236255e3ac73b2e.png",
+    "static/media/styled-components.png": "/portfolio/static/media/styled-components.186b514d3f4ae897e934.png",
+    "index.html": "/portfolio/index.html",
+    "static/media/redux.svg": "/portfolio/static/media/redux.71eb13e2fdd1de624e9a856125906e3b.svg",
+    "main.abbb233c.js.map": "/portfolio/static/js/main.abbb233c.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.abbb233c.js"
+  ]
+}
