@@ -27,6 +27,7 @@ const initialState = mode ? mode?.darkMode : false
 
 function App() {
   const [darkMode, setDarkMode] = useState(initialState)
+  const [activeLink, setActiveLink] = useState("")
 
   useEffect(() => {
     localStorage.setItem("KSPortfolioV1", JSON.stringify({ darkMode }))
@@ -36,9 +37,13 @@ function App() {
     <React.Fragment>
       <ThemeProvider theme={theme}>
         <GlobalStyle darkMode={darkMode} />
-        <Nav mode={{ darkMode, setDarkMode }} />
+        <Nav mode={{ darkMode, setDarkMode }} setActiveLink={setActiveLink} />
         <Routes>
-          <Route path="portfolio" element={<Home />}>
+          <Route
+            path="portfolio"
+            element={<Home link={{ activeLink, setActiveLink }} />}
+          >
+            <Route path=":child" element={<NoMatch />} />
             <Route index element={<AboutMe />} />
             <Route path="about-me" element={<AboutMe />} />
             <Route path="projects" element={<Projects />} />
