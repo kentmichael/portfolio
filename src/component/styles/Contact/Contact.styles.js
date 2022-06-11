@@ -20,7 +20,9 @@ export const Div = styled.div`
   background-color: var(--theme-element);
 `
 
-export const Div1 = styled.div``
+export const Div1 = styled.div`
+  margin-bottom: 2rem;
+`
 
 export const H2 = styled.h2`
   margin-bottom: 2rem;
@@ -37,7 +39,6 @@ export const H2 = styled.h2`
 export const Ul = styled.ul`
   list-style-type: none;
   margin: 0;
-  margin-bottom: 2rem;
   padding: 0;
 
   & > *:not(:last-child) {

@@ -85,14 +85,16 @@ export const Div1 = styled.div`
   }
 
   &::after {
-    content: "CLICKME";
+    content: "CLICK ME";
     position: absolute;
+    display: block;
+    width: 100%;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     font-weight: 500;
     font-size: 1.75rem;
-    letter-spacing: 2rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
     color: var(--white);
     opacity: 0;
     transition: opacity 300ms ease-in-out;

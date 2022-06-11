@@ -91,7 +91,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  .active {
+  a.active {
     opacity: 1;
   }
 

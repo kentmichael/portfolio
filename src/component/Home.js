@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react"
-import { Outlet } from "react-router-dom"
+import React, { useEffect } from "react"
+import { Outlet, useNavigate, useParams } from "react-router-dom"
 import {
   Main,
   Section,
@@ -31,12 +31,30 @@ const links = [
   },
 ]
 
-const Home = () => {
-  const [active, setActive] = useState("")
+const Home = (props) => {
+  const { activeLink, setActiveLink } = props.link
+  const params = useParams()
+  const navigate = useNavigate()
 
   useEffect(() => {
-    if (!document.querySelector(".active")) setActive("about-me")
-  }, [])
+    if (!document.querySelector(".active")) setActiveLink("about-me")
+  })
+
+  useEffect(() => {
+    switch (params?.child) {
+      case "about-me":
+        navigate("about-me")
+        break
+      case "projects":
+        navigate("projects")
+        break
+      case "contact":
+        navigate("contact")
+        break
+      default:
+        break
+    }
+  }, [navigate, params])
 
   return (
     <Main>
@@ -54,8 +72,8 @@ const Home = () => {
               <li key={idx}>
                 <StyledNavLink
                   to={link.to}
-                  className={active === link.to ? "active" : null}
-                  onClick={() => setActive(link.to)}
+                  className={activeLink === link.to ? "active" : null}
+                  onClick={() => setActiveLink(link.to)}
                 >
                   {link.title}
                 </StyledNavLink>
