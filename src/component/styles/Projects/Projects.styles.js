@@ -8,7 +8,7 @@ export const Div = styled.div`
   margin-inline: auto;
 
   @media (min-width: 71.88em) {
-    max-width: none;
+    max-width: 75rem;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
@@ -20,7 +20,7 @@ export const Section = styled.section`
   overflow: hidden;
   border-radius: 1rem;
   padding-top: 2.38rem;
-  background-color: var(${(props) => props.bgColor});
+  background-color: var(--theme-element);
 
   @media (min-width: 71.88em) {
     padding-top: 2.88rem;
@@ -41,6 +41,7 @@ export const Div1 = styled.div`
   height: 12.75rem;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
+  border-top: 0.06rem solid var(--theme-bg);
   background-color: var(--theme-element);
   background-image: url(${(props) => props.bg});
   background-repeat: no-repeat;

@@ -5,10 +5,10 @@ export const Section = styled.section`
   margin-inline: auto;
   border-radius: 1rem;
   padding-top: 2.38rem;
-  background-color: var(--soft-yellow);
+  background-color: var(--theme-element);
 
   @media (min-width: 71.88em) {
-    max-width: none;
+    max-width: 75rem;
   }
 `
 
@@ -16,6 +16,7 @@ export const Div = styled.div`
   display: grid;
   gap: 2rem;
   border-radius: 1rem;
+  border-top: 0.06rem solid var(--theme-bg);
   padding-block: 2rem;
   padding-inline: 1.75rem;
   background-color: var(--theme-element);

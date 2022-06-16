@@ -13,10 +13,8 @@ export const Main = styled.main`
   }
 
   @media (min-width: 71.88em) {
-    grid-template-columns: 1fr 3fr;
     gap: 2rem;
     margin-bottom: 6rem;
-    align-items: start;
   }
 
   @media (min-width: 87.5em) {
@@ -32,7 +30,7 @@ export const Section = styled.section`
   background-color: var(--theme-element);
 
   @media (min-width: 71.88em) {
-    position: sticky;
+    max-width: 75rem;
     top: 2rem;
   }
 `
@@ -45,7 +43,8 @@ export const Div = styled.div`
   padding-block: 2rem;
   padding-inline: 1.75rem;
   border-radius: 1rem;
-  background-color: var(--lime-green);
+  border-bottom: 0.06rem solid var(--theme-bg);
+  background-color: var(--theme-element);
 
   @media (min-width: 71.88em) {
     gap: 2.5rem;
@@ -103,7 +102,6 @@ export const Ul = styled.ul`
   padding-inline: 1.75rem;
 
   @media (min-width: 71.88em) {
-    flex-flow: column wrap;
     gap: 1.63rem;
   }
 `
