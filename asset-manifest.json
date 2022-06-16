@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.93eceb96.js",
+    "main.js": "/portfolio/static/js/main.d2aa768c.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/photo-of-me.jpg": "/portfolio/static/media/photo-of-me.977a7fd481260f82afbe.jpg",
     "static/media/space-tourism-bg.png": "/portfolio/static/media/space-tourism-bg.9fb8c42e4aeca06b9851.png",
@@ -13,10 +13,10 @@
     "static/media/styled-components.png": "/portfolio/static/media/styled-components.186b514d3f4ae897e934.png",
     "index.html": "/portfolio/index.html",
     "static/media/redux.svg": "/portfolio/static/media/redux.71eb13e2fdd1de624e9a856125906e3b.svg",
-    "main.93eceb96.js.map": "/portfolio/static/js/main.93eceb96.js.map",
+    "main.d2aa768c.js.map": "/portfolio/static/js/main.d2aa768c.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.93eceb96.js"
+    "static/js/main.d2aa768c.js"
   ]
 }
