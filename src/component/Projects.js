@@ -46,7 +46,6 @@ const projectData = [
         color: "#05C3DD",
       },
     ],
-    bgColor: "--blue",
   },
   {
     title: "Rock, Paper, Scissors, Lizard, Spock",
@@ -75,7 +74,6 @@ const projectData = [
         color: "#D62598",
       },
     ],
-    bgColor: "--light-orange",
   },
   {
     title: "Space Tourism Website",
@@ -102,7 +100,6 @@ const projectData = [
         color: "#05C3DD",
       },
     ],
-    bgColor: "--soft-blue",
   },
   {
     title: "Shortly URL",
@@ -129,7 +126,6 @@ const projectData = [
         color: "#D62598",
       },
     ],
-    bgColor: "--light-red",
   },
   {
     title: "Advice Generator App",
@@ -156,7 +152,6 @@ const projectData = [
         color: "#D62598",
       },
     ],
-    bgColor: "--violet",
   },
   {
     title: "E-commerce Product Page",
@@ -183,7 +178,6 @@ const projectData = [
         color: "#D62598",
       },
     ],
-    bgColor: "--soft-yellow",
   },
 ]
 
@@ -202,7 +196,7 @@ const Projects = () => {
         } = project
 
         return (
-          <Section bgColor={bgColor} key={idx}>
+          <Section key={idx}>
             <a href={liveSiteUrl} target="_blank" rel="noreferrer">
               <Div1 bg={screenshot} title="Visit Website"></Div1>
             </a>
