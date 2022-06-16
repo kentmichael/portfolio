@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 import { ThemeProvider } from "styled-components"
 import { Routes, Route } from "react-router-dom"
+import { useSelector } from "react-redux"
 import GlobalStyle from "./component/styles/Global/Global"
 import Nav from "./component/Navigation"
 import Home from "./component/Home"
@@ -22,12 +23,8 @@ const theme = {
   },
 }
 
-const mode = JSON.parse(localStorage.getItem("KSPortfolioV1"))
-const initialState = mode ? mode?.darkMode : false
-
 function App() {
-  const [darkMode, setDarkMode] = useState(initialState)
-  const [activeLink, setActiveLink] = useState("")
+  const darkMode = useSelector((state) => state.theme.darkMode)
 
   useEffect(() => {
     localStorage.setItem("KSPortfolioV1", JSON.stringify({ darkMode }))
@@ -37,12 +34,9 @@ function App() {
     <React.Fragment>
       <ThemeProvider theme={theme}>
         <GlobalStyle darkMode={darkMode} />
-        <Nav mode={{ darkMode, setDarkMode }} setActiveLink={setActiveLink} />
+        <Nav />
         <Routes>
-          <Route
-            path="portfolio"
-            element={<Home link={{ activeLink, setActiveLink }} />}
-          >
+          <Route path="portfolio" element={<Home />}>
             <Route path=":child" element={<NoMatch />} />
             <Route index element={<AboutMe />} />
             <Route path="about-me" element={<AboutMe />} />

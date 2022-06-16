@@ -17,28 +17,20 @@ const links = [
   {
     title: "About Me",
     to: "about-me",
-    active: true,
   },
   {
     title: "Projects",
     to: "projects",
-    active: false,
   },
   {
     title: "Contact",
     to: "contact",
-    active: false,
   },
 ]
 
-const Home = (props) => {
-  const { activeLink, setActiveLink } = props.link
+const Home = () => {
   const params = useParams()
   const navigate = useNavigate()
-
-  useEffect(() => {
-    if (!document.querySelector(".active")) setActiveLink("about-me")
-  })
 
   useEffect(() => {
     switch (params?.child) {
@@ -70,13 +62,7 @@ const Home = (props) => {
           {links.map((link, idx) => {
             return (
               <li key={idx}>
-                <StyledNavLink
-                  to={link.to}
-                  className={activeLink === link.to ? "active" : null}
-                  onClick={() => setActiveLink(link.to)}
-                >
-                  {link.title}
-                </StyledNavLink>
+                <StyledNavLink to={link.to}>{link.title}</StyledNavLink>
               </li>
             )
           })}

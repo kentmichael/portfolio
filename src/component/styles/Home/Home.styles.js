@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 export const Main = styled.main`
   display: grid;
@@ -106,7 +106,7 @@ export const Ul = styled.ul`
   }
 `
 
-export const StyledNavLink = styled(Link)`
+export const StyledNavLink = styled(NavLink)`
   font-weight: 500;
   font-size: 1rem;
   color: var(--theme-text);

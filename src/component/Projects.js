@@ -130,7 +130,7 @@ const projectData = [
   {
     title: "Advice Generator App",
     description:
-      "Built using the Advice Slip API. Need some random advice? Roll the dice!",
+      "Utilizing the Advice Slip API. Need some random advice? Roll the dice!",
     liveSiteUrl: "https://kentmichael.github.io/advice-generator-app/",
     sourceCode: "https://github.com/kentmichael/advice-generator-app",
     screenshot: adviceAppBg,
@@ -192,7 +192,6 @@ const Projects = () => {
           sourceCode,
           screenshot,
           techStack,
-          bgColor,
         } = project
 
         return (
